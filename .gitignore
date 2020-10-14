@@ -1,0 +1,15 @@
+*.orig
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+templates/
+/bin/
+
+#MacOS
+.DS_Store
