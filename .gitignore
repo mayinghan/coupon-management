@@ -13,3 +13,5 @@ templates/
 
 #MacOS
 .DS_Store
+
+application-dev.properties
