@@ -9,9 +9,9 @@ eureka:
   instance:
     hostname: 127.0.0.1
   client:
-    # if get registry info from eureka server. since we have only one node, then set to false (no need to sync from others)
+    # get registry info from eureka server or not. since we have only one node, then set to false (no need to sync from others)
     fetch-registry: false
-    # if register myself to eureka server.
+    # if register myself to eureka server or not.
     register-with-eureka: false
     # eureka server running location
     service-url:
