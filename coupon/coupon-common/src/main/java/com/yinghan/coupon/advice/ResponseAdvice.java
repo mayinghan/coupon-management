@@ -1,7 +1,7 @@
 package com.yinghan.coupon.advice;
 
 import com.yinghan.coupon.annotation.IgnoreResponseAdvice;
-import com.yinghan.coupon.object.CommonResponse;
+import com.yinghan.coupon.vo.CommonResponseVO;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -31,12 +31,12 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
                                   ServerHttpRequest request,
                                   ServerHttpResponse response) {
 
-        CommonResponse<Object> res = new CommonResponse<>(0, "");
+        CommonResponseVO<Object> res = new CommonResponseVO<>(0, "");
 
         if(body == null) {
             return res;
-        } else if (body instanceof CommonResponse) {
-            res = (CommonResponse<Object>)body;
+        } else if (body instanceof CommonResponseVO) {
+            res = (CommonResponseVO<Object>)body;
         } else {
             res.setData(body);
         }

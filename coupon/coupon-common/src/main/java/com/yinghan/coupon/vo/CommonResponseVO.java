@@ -1,4 +1,4 @@
-package com.yinghan.coupon.object;
+package com.yinghan.coupon.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,12 +9,12 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CommonResponse<T> implements Serializable {
+public class CommonResponseVO<T> implements Serializable {
     private Integer code;
     private String message;
     private T data;
 
-    public CommonResponse(int code, String message) {
+    public CommonResponseVO(int code, String message) {
         this.code = code;
         this.message = message;
         this.data = null;
