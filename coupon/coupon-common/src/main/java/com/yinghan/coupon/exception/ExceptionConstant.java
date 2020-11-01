@@ -1,4 +1,4 @@
-package com.yinghan.coupon.constant;
+package com.yinghan.coupon.exception;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

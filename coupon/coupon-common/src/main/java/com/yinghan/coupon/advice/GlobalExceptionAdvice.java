@@ -1,6 +1,6 @@
 package com.yinghan.coupon.advice;
 
-import com.yinghan.coupon.constant.ExceptionConstant;
+import com.yinghan.coupon.exception.ExceptionConstant;
 import com.yinghan.coupon.exception.CouponException;
 import com.yinghan.coupon.vo.CommonResponseVO;
 import org.springframework.web.bind.annotation.ExceptionHandler;
