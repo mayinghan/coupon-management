@@ -8,16 +8,14 @@ import java.util.stream.Stream;
 
 @Getter
 @AllArgsConstructor
-public enum CouponCategory {
-    CASHBACK_WITH_CONDITION(0, "cash back with condition"),
-    FIX_DISCOUNT(1, "xxx off"),
-    CASHBACK_WITHOUT_CONDITION(2, "cash back without condition");
+public enum ValidityPeriod {
+    FIX(0, "fixed date"),
+    SHIFT(1, "start from the getting time");
 
     private Integer code;
     private String description;
 
-
-    public static CouponCategory of(int code) {
+    public static ValidityPeriod of(int code) {
         Objects.requireNonNull(code);
         return Stream.of(values())
                 .filter(it -> it.code == code)
