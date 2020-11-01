@@ -3,20 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>coupon-microservice</artifactId>
+        <artifactId>coupon</artifactId>
         <groupId>com.yinghan</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>coupon</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>coupon-data</artifactId>
 
-    <modules>
-        <module>coupon-common</module>
-        <module>coupon-data</module>
-        <module>coupon-template</module>
-    </modules>
 
-    <packaging>pom</packaging>
 </project>
